@@ -1,0 +1,385 @@
+body{
+  background: white;
+  font-family: helvetica;
+}
+
+a, a:hover, a:active, a:visited, a:focus {
+    text-decoration:none;
+}
+
+.title{
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #383838;
+}
+
+.titleOut{
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #383838;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+
+.underTitle{
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #383838;
+}
+
+.paragraph{
+  font-size: 1em;
+  color: #606060;
+}
+
+.hR{
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 2px;
+}
+.hR2{
+    display: block;
+    margin-top: 1em;
+    margin-bottom: .3em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+
+.textHolder{
+  padding: 7px;
+  padding-top: 7px;
+  width: 88%;
+  margin: auto;
+}
+
+.ticketHolder{
+  width: 100%;
+  height: auto;
+  background-color: #ededed;
+  margin-top: 15px;
+  padding-bottom: 20px;
+}
+
+
+.actionButton{
+  background-color: #f8df40;
+  border: none;
+  border-radius: 0px;
+  width: 85%;
+  display: block;
+  margin: auto;
+  height: 40px;
+  font-size: 1.5em;
+  color: #383838;
+  margin-bottom: 15px;
+}
+
+.actionButtonBigger{
+  background-color: #f8df40;
+  border: none;
+  border-radius: 0px;
+  width: 85%;
+  display: block;
+  margin: auto;
+  height: 50px;
+  font-size: 1.8em;
+  color: #383838;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+
+/*NAV*/
+nav{
+  width: 100%;
+  background-color: #3a3a3a;
+  height: 60px;
+  color: white;
+  text-align: center;
+  font-size: 2.5em;
+  clear: both;
+}
+
+
+nav a{
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-size: .7em;
+}
+
+nav a:first-child{
+  float: left;
+  padding-left: 15px;
+  background-image: url(../img/acc.png);
+  width: 30px;
+  height: 30px;
+  background-position: center;
+  background-size: 30px;
+  background-repeat: no-repeat;
+  margin-top: 15px;
+  margin-left: 25px;
+}
+nav a:nth-child(3){
+  float: right;
+  padding-right: 15px;
+  background-image: url(../img/info.png);
+  width: 30px;
+  height: 30px;
+  background-position: center;
+  background-size: 30px;
+  background-repeat: no-repeat;
+  margin-top: 15px;
+  margin-right: 25px;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:active{
+  color: white;
+}
+
+/*NAV*/
+
+
+/*HOMESCREEN*/
+
+img{
+  display: block;
+  margin: auto;
+  margin-top: 50px;
+  width: 47%;
+  height: auto;
+  margin-bottom: 60px;
+}
+
+/*HOMESCREEN*/
+
+/*buyTicket*/
+
+.ticketImg{
+  display: inline-block;
+  height: 50px;
+  width: 16%;
+  background-color: red;
+}
+
+.floatRightText{
+  margin-left: 20px;
+  display: inline-block;
+  width: 75%;
+  margin-bottom: 20px;
+}
+
+/*buyTicket*/
+
+/*recentStops*/
+
+.inputField{
+  border: 1px solid gray;
+  width: 100%;
+  margin: auto;
+  border-radius: 10px;
+  height: 40px;
+  background: url(http://www.clker.com/cliparts/9/T/2/h/X/7/search-icon-md.png) no-repeat left ;
+  background-position-x: 315px;
+  background-size: 20px;
+  font-size: 1em;
+  padding-left: 20px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.logIn{
+  background-position-x: 1050px;
+}
+
+.stopNummer{
+  width: 50px !important;
+  height: auto !important;
+  margin-left: 0px!important;
+}
+
+/*recentStops*/
+
+/*recentLocation*/
+
+#nearbyLocation {
+  border: 1px solid gray;
+  width: 100%;
+  margin: auto;
+  border-radius: 10px;
+  height: 40px;
+  background: url(http://www.clker.com/cliparts/9/T/2/h/X/7/search-icon-md.png) no-repeat left ;
+  background-position-x: 315px;
+  background-size: 20px;
+  font-size: 1em;
+  padding-left: 20px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.imgHolder{
+  height: 380px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.mapPic{
+  width: 100%;
+  margin-top: 0px;
+  height: auto;
+}
+
+.stops p{
+  display: inline-block;
+  border: 1px solid red;
+  font-size: 1em;
+}
+
+.nearbyLocationDiv{
+  background-color: #ededed;
+  height: 280px;
+}
+
+.halteTitel{
+  font-size: 1.2em;
+  width: 90%;
+  margin: auto;
+  padding-top: 30px;
+  font-weight: bold;
+}
+
+.afstand{
+  font-size: 1em;
+  width: 90%;
+  margin: auto;
+  padding-top: 10px;
+  color: #8c8a8a;
+}
+
+.haltePara{
+  font-size: 1em;
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    color: #383838;
+}
+
+.halteNummer{
+  margin-left: 5%;
+  margin-top: 10px;
+  height: 40px;
+  font-size: 1em;
+  padding-top: 15px!important;
+  width: 60px!important;
+}
+
+.googleTekst{
+  font-size: .8em;
+  margin-left: 5%;
+  margin-top: 20px;
+}
+
+.lijn{
+  background-color: gray;
+}
+
+/*recentLocation*/
+
+/*planRoute*/
+
+.travelOptionsHolder{
+  margin: auto;
+  width: 100%;
+  margin-bottom: -70px;
+  margin-top: -30px;
+}
+
+.planRouteHolder img{
+  width: 6vw;
+  height: auto;
+  display: inline-block;
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.travelOptionsHolder img{
+height: 20px;
+width: auto;
+display: inline-block;
+margin-right: 15px;
+}
+
+.spatie{
+  margin-bottom: 20px;
+}
+
+.spatieBoven{
+  margin-top: 20px;
+}
+
+
+/*INFO*/
+
+
+.travelName{
+  color: #383838;
+  display: inline-block;
+  padding: 5px 0px;
+  font-size: 1em;
+  margin-left: 20px;
+}
+
+.travelOption{
+  display: inline-block;
+}
+
+/*INFO*/
+
+
+/*LOGINGSCREEN*/
+
+.lostPassword{
+  font-size: 1em;
+  color: #383838;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  display: block;
+  margin-top: 10px;
+}
+/*LOGINGSCREEN*/
+
+.footer{
+  width: 100%;
+  background-color: #3a3a3a;
+  height: 100px;
+  color: white;
+  font-size: 3.2em;
+  text-align: center;
+  padding-top: 20px;
+  position: absolute;
+  bottom: 0px;
+}
+
+.footer p{
+  font-size: .8em;
+}
+
+.foot{
+  position: relative;
+  bottom: 0px;
+}

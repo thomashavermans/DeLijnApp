@@ -1,0 +1,50 @@
+<% include header %>
+
+  <%# zie uitleg bij haltesindebuurt.ejs%>
+
+
+
+
+
+
+  <div class="loca info">
+
+    <form method="post" action="/haltesindebuurt">
+
+      <input id="lat" type="text" name="lat" style="display: none">
+      <input id="long" type="text" name="long" style="display: none">
+      <div class="ticketHolder">
+        <div class="textHolder">
+          <p class="title">Zoek haltes in de buurt</p>
+          <p class="paragraph">In een radius van:</p>
+          <input id="nearbyLocation" type="text" name="radius" value="bv. 800m">
+        </div>
+      </div>
+      <input type="submit" value="" style="display:none">
+    </form>
+
+      <h1 class="titleOut">Haltes bij u in de buurt</h1>
+    <div class="imgHolder">
+      <img class="mapPic" src="../img/mapPic.png" alt="">
+    </div>
+
+  </div>
+
+  <script>
+  // Locatie krijgen van gebruiker en ineens in form plaatsen
+    window.onload = function() {
+
+      var startPos;
+      var geoSuccess = function(position) {
+        startPos = position;
+        console.log("lat = " + startPos.coords.latitude);
+        document.getElementById('lat').value = startPos.coords.latitude;
+        console.log("long = " + startPos.coords.longitude);
+        document.getElementById('long').value = startPos.coords.longitude ;
+
+      };
+      navigator.geolocation.getCurrentPosition(geoSuccess);
+    };
+  </script>
+
+<%  include footer %>

@@ -1,0 +1,49 @@
+<% include header %>
+
+  <div class="loca info">
+    <form method="post" action="/haltesindebuurt">
+
+      <input id="lat" type="text" name="lat" style="display: none">
+      <input id="long" type="text" name="long" style="display: none">
+      <div class="ticketHolder">
+        <div class="textHolder">
+          <p class="title">Zoek haltes in de buurt</p>
+          <p class="paragraph">In een radius van:</p>
+          <input id="nearbyLocation" type="text" name="radius" value="bv. 800">
+        </div>
+      </div>
+      <input type="submit" value="" style="display:none">
+    </form>
+  </div>
+
+  <script>
+
+  // Locatie krijgen van gebruiker en om vervolgens in form te plaatsen
+    window.onload = function() {
+
+      var startPos;
+      var geoSuccess = function(position) {
+        startPos = position;
+        // console.log("lat = " + startPos.coords.latitude);
+        document.getElementById('lat').value = startPos.coords.latitude;
+        // console.log("long = " + startPos.coords.longitude);
+        document.getElementById('long').value = startPos.coords.longitude ;
+      };
+      navigator.geolocation.getCurrentPosition(geoSuccess);
+    };
+
+
+  </script>
+
+  <h1 class="titleOut">Haltes bij u in de buurt</h1>
+
+  <%# opvragen van aangemaakte data in index.js%>
+  <%- haltes %>
+
+
+  <p>U heeft het einde van de lijst bereikt.</p>
+
+
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQ9DxdTaOcZH64pIDQV-B9hWpEf4pr5cg&callback=initMap">
+  </script>
